@@ -16,6 +16,8 @@ intents = discord.Intents.default()
 client = discord.Client(intents=intents)
 tree = app_commands.CommandTree(client)
 
+bottoken = 'bot_token' #replace bot_token with your discord bot's token
+
 global ip, port
 ip, port = -1, 25565
 global bot
@@ -192,4 +194,4 @@ def handle_dig_response(err, block):
 
 
 
-client.run('MTI5MTcxNjA0NDUyMzcwMDIzNA.GKhy0p.UUU5vL0oC3zmtR7ODkYn3YCfTnbZHo4_W2zdmU')
+client.run(bottoken)
